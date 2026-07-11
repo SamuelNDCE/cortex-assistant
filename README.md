@@ -1,4 +1,4 @@
-# sam-jarvis-assistant
+# jarvis-assistant
 
 Building-block Rust crates for a fully on-device voice assistant: wake word → speech-to-text → intent parsing → Claude API → text-to-speech, with no cloud STT/TTS dependency.
 
@@ -18,7 +18,7 @@ This is the assistant's engine, not a full app — `main.rs`/UI is intentionally
 
 ## Part of a larger collection
 
-This repo is one piece of a set of tools published together — see [sam-toolkit](https://github.com/SamuelNDCE/sam-toolkit) for the full index.
+This repo is one piece of a set of tools published together — see [toolkit](https://github.com/SamuelNDCE/toolkit) for the full index.
 
 ## License
 

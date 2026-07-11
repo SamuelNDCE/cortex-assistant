@@ -40,8 +40,8 @@ mod tests {
     #[test]
     fn remember_strips_prefix() {
         assert_eq!(
-            parse_intent("remember Samuel likes dark themes"),
-            Command::Remember("Samuel likes dark themes".into()),
+            parse_intent("remember I like dark themes"),
+            Command::Remember("I like dark themes".into()),
         );
     }
 
