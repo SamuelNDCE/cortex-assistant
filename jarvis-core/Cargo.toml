@@ -1,0 +1,10 @@
+[package]
+name = "jarvis-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde   = { workspace = true }
+anyhow  = { workspace = true }
+dotenvy = { workspace = true }
+tracing = { workspace = true }

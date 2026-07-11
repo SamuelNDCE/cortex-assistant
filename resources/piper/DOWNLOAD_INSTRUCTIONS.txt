@@ -1,0 +1,26 @@
+Piper TTS — Download Instructions
+===================================
+
+1. Download piper for Windows (x86_64) from:
+   https://github.com/rhasspy/piper/releases/latest
+   File: piper_windows_amd64.zip
+
+2. Extract piper.exe into this directory:
+   jarvis/resources/piper/piper.exe
+
+3. Download a voice model from:
+   https://huggingface.co/rhasspy/piper-voices/tree/main/en/en_US/lessac/medium
+   Files needed:
+     en_US-lessac-medium.onnx
+     en_US-lessac-medium.onnx.json
+
+4. Place both voice files into:
+   jarvis/resources/voices/
+
+5. The TTS code expects:
+   - piper.exe at: resources/piper/piper.exe
+   - model at:     resources/voices/en_US-lessac-medium.onnx
+
+Usage in code:
+   let tts = Tts::new("resources/piper/piper.exe", "resources/voices/en_US-lessac-medium.onnx");
+   tts.speak("Hello, I am JARVIS.")?;
