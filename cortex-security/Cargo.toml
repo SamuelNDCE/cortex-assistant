@@ -1,5 +1,5 @@
 [package]
-name = "jarvis-security"
+name = "cortex-security"
 version = "0.1.0"
 edition = "2021"
 
@@ -8,7 +8,7 @@ default     = []
 intruder    = ["opencv", "chrono"]
 
 [dependencies]
-jarvis-core = { path = "../jarvis-core" }
+cortex-core = { path = "../cortex-core" }
 anyhow      = { workspace = true }
 tracing     = { workspace = true }
 sha2        = "0.10"

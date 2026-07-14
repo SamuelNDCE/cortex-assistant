@@ -1,9 +1,9 @@
 [workspace]
 members = [
-    "jarvis-core",
-    "jarvis-voice",
-    "jarvis-agents",
-    "jarvis-security",
+    "cortex-core",
+    "cortex-voice",
+    "cortex-agents",
+    "cortex-security",
 ]
 resolver = "2"
 

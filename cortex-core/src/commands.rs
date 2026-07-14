@@ -29,7 +29,7 @@ mod tests {
 
     #[test]
     fn shutdown_from_shut_down() {
-        assert_eq!(parse_intent("JARVIS shut down"), Command::Shutdown);
+        assert_eq!(parse_intent("Cortex shut down"), Command::Shutdown);
     }
 
     #[test]
@@ -47,7 +47,7 @@ mod tests {
 
     #[test]
     fn search_vault() {
-        assert!(matches!(parse_intent("search my notes for JARVIS"), Command::SearchVault(_)));
+        assert!(matches!(parse_intent("search my notes for Cortex"), Command::SearchVault(_)));
     }
 
     #[test]

@@ -21,7 +21,7 @@ impl ClaudeClient {
     pub fn new(api_key: impl Into<String>) -> Self {
         Self {
             api_key: api_key.into(),
-            system:  "You are JARVIS, an intelligent personal AI assistant. \
+            system:  "You are Cortex, an intelligent personal AI assistant. \
                       You are precise, helpful, and have a calm British wit. \
                       You enhance the user — you do not replace them.".into(),
             history: vec![],

@@ -1,7 +1,7 @@
 Whisper STT model — Download Instructions
 ==========================================
 
-jarvis-voice uses whisper.cpp (via whisper-rs) for speech-to-text. Download the
+cortex-voice uses whisper.cpp (via whisper-rs) for speech-to-text. Download the
 tiny English model and place it here:
 
   URL:  https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.en.bin

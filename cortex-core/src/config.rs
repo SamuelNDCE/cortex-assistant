@@ -18,21 +18,21 @@ impl AppConfig {
             anthropic_api_key: std::env::var("ANTHROPIC_API_KEY")
                 .context("ANTHROPIC_API_KEY not set")?,
             vault_path: PathBuf::from(
-                std::env::var("JARVIS_VAULT_PATH").unwrap_or_default(),
+                std::env::var("CORTEX_VAULT_PATH").unwrap_or_default(),
             ),
             piper_path: PathBuf::from(
-                std::env::var("JARVIS_PIPER_PATH")
+                std::env::var("CORTEX_PIPER_PATH")
                     .unwrap_or_else(|_| "resources/piper/piper.exe".into()),
             ),
             voice_model: PathBuf::from(
-                std::env::var("JARVIS_VOICE_MODEL")
+                std::env::var("CORTEX_VOICE_MODEL")
                     .unwrap_or_else(|_| "resources/voices/en_US-lessac-medium.onnx".into()),
             ),
             wakeword_model: PathBuf::from(
-                std::env::var("JARVIS_WAKEWORD_MODEL")
-                    .unwrap_or_else(|_| "resources/wakeword/jarvis.rpw".into()),
+                std::env::var("CORTEX_WAKEWORD_MODEL")
+                    .unwrap_or_else(|_| "resources/wakeword/cortex.rpw".into()),
             ),
-            owner_pin: std::env::var("JARVIS_OWNER_PIN")
+            owner_pin: std::env::var("CORTEX_OWNER_PIN")
                 .unwrap_or_else(|_| "0000".into()),
         })
     }

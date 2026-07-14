@@ -1,10 +1,10 @@
 [package]
-name = "jarvis-agents"
+name = "cortex-agents"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-jarvis-core = { path = "../jarvis-core" }
+cortex-core = { path = "../cortex-core" }
 reqwest     = { version = "0.12", features = ["json"] }
 serde       = { workspace = true }
 serde_json  = { workspace = true }

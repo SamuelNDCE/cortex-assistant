@@ -6,7 +6,7 @@ Piper TTS — Download Instructions
    File: piper_windows_amd64.zip
 
 2. Extract piper.exe into this directory:
-   jarvis/resources/piper/piper.exe
+   cortex/resources/piper/piper.exe
 
 3. Download a voice model from:
    https://huggingface.co/rhasspy/piper-voices/tree/main/en/en_US/lessac/medium
@@ -15,7 +15,7 @@ Piper TTS — Download Instructions
      en_US-lessac-medium.onnx.json
 
 4. Place both voice files into:
-   jarvis/resources/voices/
+   cortex/resources/voices/
 
 5. The TTS code expects:
    - piper.exe at: resources/piper/piper.exe
@@ -23,4 +23,4 @@ Piper TTS — Download Instructions
 
 Usage in code:
    let tts = Tts::new("resources/piper/piper.exe", "resources/voices/en_US-lessac-medium.onnx");
-   tts.speak("Hello, I am JARVIS.")?;
+   tts.speak("Hello, I am Cortex.")?;

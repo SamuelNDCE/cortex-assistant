@@ -1,10 +1,10 @@
 [package]
-name = "jarvis-voice"
+name = "cortex-voice"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-jarvis-core = { path = "../jarvis-core" }
+cortex-core = { path = "../cortex-core" }
 cpal        = "0.15"
 anyhow      = { workspace = true }
 tokio       = { workspace = true }
